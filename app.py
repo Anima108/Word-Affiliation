@@ -141,6 +141,8 @@ def wordrelations():
 
 		word.sort(reverse=True,key=myFunc)
 
+		word=word[:5]
+
 		return render_template("wordAffiliation.html",word4=word)
 
 if __name__ == "__main__":
