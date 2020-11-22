@@ -34,6 +34,9 @@ def predict_word(a,b,c,words):
         sim=cosine_similarity([wb-wa],[wv-wc])
         
         sim=round(float(sim),2)
+
+        if sim<0.5:
+            continue
         
         t=[w,sim]
         

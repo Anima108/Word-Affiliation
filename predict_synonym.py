@@ -24,6 +24,9 @@ def similar_one_out(words,synonym_of):
         sim = cosine_similarity([temp],[avg_vector])
 
         sim=round(float(sim),2)
+
+        if sim<0.5:
+            continue
         
         t=[w,sim]
         

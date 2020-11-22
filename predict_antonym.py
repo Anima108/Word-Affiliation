@@ -25,7 +25,7 @@ def odd_one_out(words,antonym_of):
     
     #Iterate over every word and find similarity
     odd_one_out = None
-    min_similarity = 1.0 #Very high value
+    
     
     for w in words:  
         try:

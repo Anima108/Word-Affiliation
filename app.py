@@ -97,8 +97,6 @@ def synonyms():
 
 		word.sort(reverse=True,key=myFunc)
 
-		word=word[:10]
-
 
 		return render_template("wordAffiliation.html",synonyms=word)
 
@@ -120,7 +118,7 @@ def antonyms():
 
 		word.sort(key=myFunc)
 
-		word=word[:10]
+		word=word[:5]
 
 		return render_template("wordAffiliation.html",antonyms=word)
 
@@ -142,8 +140,6 @@ def wordrelations():
 		word=predict_word(w1,w2,w3,new_dataset)
 
 		word.sort(reverse=True,key=myFunc)
-
-		word=word[:10]
 
 		return render_template("wordAffiliation.html",word4=word)
 
